@@ -76,7 +76,12 @@
   font-weight: bold;
 }
 
-.hero-list-marketing>li{
+ol, ul {
+  list-style-type: inherit !important;
+
+}
+
+.hero-list-marketing>ul>li{
   padding: 0 0 10px 0;
 }
 

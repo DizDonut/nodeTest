@@ -19,6 +19,8 @@ app.use(express.static("public"));
 //lowes url - provided
 const url = "https://m.lowes.com/CatalogServices/product/nvalue/v1_0?nValue=4294857975&maxResults=6&showURL=1&rollUpVariants=1&showUrl=true&storeNumber=0595&priceFlag=rangeBalance&showMarketingBullets=1";
 
+let productList;
+
 //.get method to consume data from url
 https.get(url, (res) => {
   const { statusCode } = res;
@@ -69,7 +71,7 @@ app.get('/', (req, res) => {
 app.get('/product/:id', (req, res) => {
 
   const product = productList.filter((product) => {
-    return product.productId == req.params.id;
+    return product.productId === req.params.id;
  })[0];
 
  res.send(product)
