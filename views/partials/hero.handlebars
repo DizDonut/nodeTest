@@ -1,5 +1,23 @@
 {{#if productList}}
-  <div class="selected-product" id="sel-prod"
-    <img src="{{productList[0].imageUrls.lg}}" alt="{{brand}} - {{description}}">
+  <div class="selected-product">
+    <div class="container" id="sel-prod">
+      <div class="row">
+        <div class="col-md-2 hero-container">
+          <img class="hero-image" src="{{productList.[0].imageUrls.lg}}" alt="{{productList.[0].brand}} - {{productList.[0].description}}">
+        </div>
+        <div class="col-md-7">
+          <div class="hero-description-title">{{productList.[0].description}}</div>
+          <div class="hero-list-marketing">
+            <li>{{productList.[0].marketingBullets.[0]}}</li>
+            <li>{{productList.[0].marketingBullets.[1]}}</li>
+            <li>{{productList.[0].marketingBullets.[2]}}</li>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="hero-price">${{productList.[0].pricing.price.selling}}</div>
+          <button class="add-to-cart">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
   </div>
 {{/if}}
