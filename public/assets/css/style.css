@@ -1,0 +1,41 @@
+.prod-container {
+  border: .5px solid lightgray;
+  padding: 20px;
+  margin: 20px;
+}
+
+.container-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-left: 30%;
+}
+
+.container-description {
+  color: #333333;
+  opacity: 1;
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container-pricing{
+  color: #333333;
+  opacity: 1;
+  font-size: 16px;
+  font-family: Helvetica;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.view-more{
+  border: 1px solid #CCCCCC;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: #0471AF;
+  font-size: 16px;
+  font-family: Helvetica;
+  background-color: #FFFFFF;
+}
