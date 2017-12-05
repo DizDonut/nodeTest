@@ -2,7 +2,7 @@
   Product listing
 */
 
-.prod-container {
+.prodcontainer {
   border: .5px solid lightgray;
   padding: 20px;
   margin: 0 20px 20px 0;
@@ -24,6 +24,9 @@
   font-weight: bold;
   margin-bottom: 10px;
   text-align: left !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .container-pricing{

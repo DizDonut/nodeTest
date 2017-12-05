@@ -1,17 +1,19 @@
 
 
+
 //ensure resources are loaded
 window.onload = () => {
 
+
   //mouse over/hover event
-  $(".prod-container").on("mouseover", (event) =>{
+  $(".prodcontainer").on("mouseover", (event) => {
     event.preventDefault();
 
     //grab data attribute that has the product id stored
-    let productID = $(this).data("productID");
+    let productID = $(event.target).data("productid");
+    console.log(productID);
 
-      // TODO: product ID is not retrieving the data attribute so nothing is being passed into my get query below
-      console.log(productID);
+
 
     //append that id to our url to get back the json object properties attributed to that prod id
     $.get(`http://localhost:3000/product/${productID}`, (res) => {

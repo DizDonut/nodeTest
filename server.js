@@ -64,7 +64,7 @@ https.get(url, (res) => {
 
 //main will render home view
 app.get('/', (req, res) => {
-    res.render('home', { productList: productList });
+    res.render("home", { productList: productList });
 });
 
 // filter the product list for specific product and return the product if found.
@@ -74,7 +74,7 @@ app.get('/product/:id', (req, res) => {
     return product.productId === req.params.id;
  })[0];
 
- res.send(product)
+ res.send("home", product)
 
 });
 
